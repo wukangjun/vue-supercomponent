@@ -1,0 +1,92 @@
+$font: 12px;
+// loading加载层级
+.el-loading-mask{
+  z-index: 2000;
+  right: 1px;
+  bottom: 1px;
+}
+// 弹框底部位置样式
+.dialog-footer{
+  text-align: right
+}
+// 弹框的宽度样式
+.dialog-tiny{
+  width: 400px
+}
+.dialog-small{
+  width: 600px
+}
+.dialog-middle{
+  width: 750px
+}
+.el-tabs__content{
+  overflow: visible;
+  height: 100%;
+}
+.el-form-item__content:after {
+  clear: none;
+}
+//去除iE下的叉
+input::-ms-clear, ::-ms-reveal{display: none;}
+.dialog-large{
+  width: 900px
+}
+input:-webkit-autofill{
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  -webkit-text-fill-color: #9f9f9f; 
+}
+// z-tree搜索树的样式
+.cv-search-tree li{
+  span.node_name{
+    font-size: 14px;
+    font-family: '微软雅黑'
+  }
+  span.button{
+    vertical-align: sub;
+    margin-left: 2px;
+    margin-top: 2px;
+  }
+  span.button.edit,
+  span.button.remove{
+    vertical-align: sub;
+  }
+  a{
+    height: 30px;
+    line-height: 30px;
+    font-family: '微软雅黑'
+  }
+  a.curSelectedNode{
+    // width: 100%;  
+    border: 0;
+    background: #e4e8f1;
+    height: 30px; 
+  }
+}
+
+// el-tree的树小三角样式问题
+.el-tree-node__expand-icon{
+  width: 20px;
+  height: 20px;
+  border: none; 
+  margin-right: 3px;
+  position: relative; 
+  &:before{
+    content: "";
+    position: absolute;
+    top:5px;
+    left: 5px;
+    cursor: pointer;
+      width: 0;
+      height: 0;
+      border: 6px solid transparent;
+      border-right-width: 0;
+      border-left-color: #97a8be;
+      border-left-width: 7px;
+      -ms-transform: rotate(0);
+      transform: rotate(0);
+      transition: transform .3s ease-in-out;
+  }
+}
+.el-tree-node__expand-icon.is-leaf{
+  visibility: hidden;
+}

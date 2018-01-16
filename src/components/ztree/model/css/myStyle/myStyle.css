@@ -1,0 +1,49 @@
+.ztree li span.button {
+	background-image:url("./img/zTreeStandard.png");
+}
+/* 历史轨迹按钮样式 */
+.ztree li span.track-transfer{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url('./img/track.png');
+}
+.ztree .track-transfer{
+	cursor: pointer;
+	float: right;
+}
+
+/* 车辆关注按钮样式 */
+.ztree li span.shoucang{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url('./img/shoucang.png');
+}
+.ztree .shoucang{
+	cursor: pointer;
+	float: right;
+}
+/* 车辆关注按钮样式 */
+.ztree li span.shoucang1{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url('./img/shoucang1.png');
+}
+.ztree .shoucang1{
+	cursor: pointer;
+	float: right;
+}
+.ztree li{
+	padding: 3px 0;
+}
+.ztree li a.curSelectedNode{
+	border: 0;
+	background: #bfcbd9;
+}
+.ztree li a:hover{
+	text-decoration: none;
+}
+/* 去除文件图片 */
+
